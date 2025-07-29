@@ -33,17 +33,17 @@ interface Props {
 
 const { page } = Astro.props as Props;
 const titleSuffix = ` - ${AppConfig.site_name}`;
-const titleBase = `Blog page ${page.currentPage}`;
+const titleBase = `Healing Insights - Page ${page.currentPage}`;
 const title = titleBase + titleSuffix;
 const description =
-  'Pagination example built with Astro styled with Tailwind CSS.';
+  'Articles about trauma recovery, emotional healing, and building resilience through small wins and compassionate self-care.';
 ---
 
 <Base head={{ title, description }}>
   <Section>
     <PaginationHeader
-      title='Random title here'
-      description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      title='Healing & Recovery Insights'
+      description='Gentle guidance, personal reflections, and research-backed approaches to emotional recovery and trauma healing.'
     />
   </Section>
 

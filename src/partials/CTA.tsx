@@ -12,7 +12,7 @@ const CTA = () => (
           Stay Connected to Our <GradientText>Healing Journey</GradientText>
         </>
       }
-      description="Get updates on our progress, insights about trauma recovery, and be the first to know when Small Wins for Healing is ready to support you or someone you care about."
+      description="Get gentle insights about trauma recovery, progress updates from our development journey, and early access when Small Wins is ready. We'll never spam you—only meaningful updates that might actually help with your healing."
     />
   </Section>
 );

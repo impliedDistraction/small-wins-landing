@@ -1,0 +1,68 @@
+---
+import { Section } from 'astro-boilerplate-components';
+import Base from '@/templates/Base.astro';
+import { AppConfig } from '@/utils/AppConfig';
+
+const title = `Thank You - ${AppConfig.site_name}`;
+const description = 'Thank you for your interest in Small Wins for Healing. We\'ll be in touch soon.';
+---
+
+<Base head={{ title, description }}>
+  <Section>
+    <div class="mx-auto max-w-4xl text-center py-20">
+      <div class="mb-8 text-6xl">💙</div>
+      
+      <h1 class="mb-6 text-4xl font-bold text-gray-100">
+        Thank You for Joining Us
+      </h1>
+      
+      <p class="mb-8 text-xl text-gray-300 max-w-2xl mx-auto">
+        Your request for early access has been received. We're honored that you want to be part of building something meaningful together.
+      </p>
+      
+      <div class="bg-slate-800 rounded-lg p-8 max-w-2xl mx-auto mb-8">
+        <h2 class="text-2xl font-semibold text-cyan-400 mb-4">What happens next?</h2>
+        <ul class="text-left text-gray-300 space-y-3">
+          <li class="flex items-start">
+            <span class="text-cyan-400 mr-3">📧</span>
+            We'll send you updates on our progress (no spam, we promise)
+          </li>
+          <li class="flex items-start">
+            <span class="text-cyan-400 mr-3">🚀</span>
+            You'll get early access when we launch the beta
+          </li>
+          <li class="flex items-start">
+            <span class="text-cyan-400 mr-3">💬</span>
+            Your feedback will help shape the app's development
+          </li>
+          <li class="flex items-start">
+            <span class="text-cyan-400 mr-3">🌱</span>
+            You'll be part of a community focused on healing and growth
+          </li>
+        </ul>
+      </div>
+      
+      <div class="space-x-4">
+        <a 
+          href="/"
+          class="inline-block rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 font-semibold text-white transition-all duration-200 hover:from-cyan-600 hover:to-blue-600"
+        >
+          Back to Home
+        </a>
+        <a 
+          href="/posts/"
+          class="inline-block rounded-lg border border-cyan-400 px-6 py-3 font-semibold text-cyan-400 transition-colors hover:bg-cyan-400 hover:text-slate-900"
+        >
+          Read Our Articles
+        </a>
+      </div>
+      
+      <p class="mt-12 text-sm text-gray-500">
+        Questions? Feel free to reach out at 
+        <a href="mailto:hello@smallwinshealing.com" class="text-cyan-400 hover:underline">
+          hello@smallwinshealing.com
+        </a>
+      </p>
+    </div>
+  </Section>
+</Base>

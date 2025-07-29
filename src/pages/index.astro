@@ -1,13 +1,25 @@
 ---
 import type { IFrontmatter } from 'astro-boilerplate-components';
 
+import { BenefitsSummary } from '@/partials/BenefitsSummary';
 import { CTA } from '@/partials/CTA';
+import { Comparison } from '@/partials/Comparison';
+import { CrisisSupport } from '@/partials/CrisisSupport';
+import { DevelopmentUpdates } from '@/partials/DevelopmentUpdates';
 import { EarlyAccess } from '@/partials/EarlyAccess';
+import { FAQ } from '@/partials/FAQ';
 import { Features } from '@/partials/Features';
 import { FounderStory } from '@/partials/FounderStory';
 import { Hero } from '@/partials/Hero';
+import { HowItWorks } from '@/partials/HowItWorks';
+import { PrivacyTrust } from '@/partials/PrivacyTrust';
+import { ProgressWithoutPressure } from '@/partials/ProgressWithoutPressure';
 import { RecentPosts } from '@/partials/RecentPosts';
+import { ResearchFoundation } from '@/partials/ResearchFoundation';
 import { Support } from '@/partials/Support';
+import { TrustSignals } from '@/partials/TrustSignals';
+import { TrySmallWin } from '@/partials/TrySmallWin';
+import { WhyItMatters } from '@/partials/WhyItMatters';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
 import { sortByDate } from '@/utils/Posts';
@@ -23,9 +35,21 @@ const { description } = AppConfig;
 <Base head={{ title, description }}>
   <Hero />
   <FounderStory />
+  <BenefitsSummary />
   <Features />
+  <TrySmallWin />
+  <HowItWorks />
+  <ProgressWithoutPressure />
+  <WhyItMatters />
+  <ResearchFoundation />
+  <Comparison />
+  <PrivacyTrust />
+  <TrustSignals />
   <EarlyAccess />
+  <FAQ />
+  <DevelopmentUpdates />
   <Support />
   <RecentPosts postList={lastThreePosts} />
   <CTA />
+  <CrisisSupport />
 </Base>
